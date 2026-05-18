@@ -1,20 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 48 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;">
-    <g transform="matrix(1.00345,0,0,1.02949,-0.00557599,-0.577561)">
-        <path d="M46.463,11.941L46.463,33.863C46.463,39.876 41.455,44.758 35.286,44.758L12.795,44.758C6.626,44.758 1.618,39.876 1.618,33.863L1.618,11.941C1.618,5.928 6.626,1.047 12.795,1.047L35.286,1.047C41.455,1.047 46.463,5.928 46.463,11.941Z" style="fill:white;"/>
-    </g>
-    <g transform="matrix(-0.957747,-1.1729e-16,1.1729e-16,-0.957747,46.7354,44.4842)">
-        <g transform="matrix(-1.49222,1.82744e-16,-1.82744e-16,-1.49222,23.7385,22.432)">
-            <g transform="matrix(1,0,0,1,-12,-12)">
-                <clipPath id="_clip1">
-                    <rect x="0" y="0" width="24" height="24"/>
-                </clipPath>
-                <g clip-path="url(#_clip1)">
-                    <path d="M17,12C17,14.761 14.761,17 12,17C9.239,17 7,14.761 7,12C7,9.239 9.239,7 12,7C14.761,7 17,9.239 17,12Z" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:2px;"/>
-                    <path d="M18.646,4.528C18.249,4.893 18,5.418 18,6C18,7.105 18.895,8 20,8C20.379,8 20.734,7.894 21.036,7.711C21.614,7.36 22,6.725 22,6C22,4.895 21.105,4 20,4C19.478,4 19.002,4.2 18.646,4.528ZM18.646,4.528C16.879,2.955 14.551,2 12,2C6.477,2 2,6.477 2,12C2,17.523 6.477,22 12,22C17.523,22 22,17.523 22,12C22,11.663 21.983,11.329 21.951,11" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:2px;"/>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="linear-gradient" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c6d6e5"/>
+      <stop offset="1" stop-color="#268ced"/>
+    </linearGradient>
+    <clipPath id="clip-Artboard_1">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="12" cy="12" r="12" fill="url(#linear-gradient)"/>
+  </g>
 </svg>

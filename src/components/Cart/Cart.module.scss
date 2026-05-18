@@ -83,7 +83,7 @@
       width: 18px;
       font-size: 14px;
       color: var(--white);
-      background-color: var(--teal);
+      background-color: var(--primary);
       top: 10px;
       right: 10px;
       border-radius: 50%;
@@ -116,13 +116,13 @@
     }
 
     &_amount {
-      color: var(--teal);
+      color: var(--primary);
       font-weight: 500;
       font-size: 22px;
     }
 
     &_checkout {
-      background-color: var(--teal);
+      background-color: var(--primary);
       color: var(--white);
       width: 100%;
       padding: 12px 16px;
@@ -176,7 +176,7 @@
     }
 
     &_price {
-      color: var(--teal);
+      color: var(--primary);
     }
   }
 }

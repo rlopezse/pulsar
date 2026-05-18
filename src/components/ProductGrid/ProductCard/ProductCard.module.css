@@ -27,7 +27,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-color: var(--teal);
+  background-color: var(--primary);
   color: var(--white);
   padding: 4px 8px;
   font-size: 10px;
@@ -74,5 +74,5 @@
 }
 
 .product_card_button:hover {
-  background-color: var(--teal);
+  background-color: var(--primary);
 }

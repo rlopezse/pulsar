@@ -27,7 +27,7 @@ function ProductCard({ data }: { data: Product }) {
       )}
       <img
         className={s.product_card_image}
-        src={`/static/products/${data.sku}.png`}
+        src={`/static/products/${data.sku}.webp`}
         alt={data.title}
         loading="lazy"
       />

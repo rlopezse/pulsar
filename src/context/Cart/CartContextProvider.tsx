@@ -8,6 +8,8 @@ export const CartContextProvider = ({ children }: { children: ReactNode }) => {
   const [cart, setCart] = useState<Cart>({ products: [], checkout: 0 })
   const [isOpen, setIsOpen] = useState(false)
 
+  console.log(cart);
+
   return (
     <CartContext.Provider value={{ cart, isOpen, setIsOpen, setCart }}>
       {children}

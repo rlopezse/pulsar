@@ -59,18 +59,25 @@ const Cart = () => {
               <div key={product.id} className={s.cart_items}>
                 <div>
                   <p className={s.cart_items_title}>{product.title}</p>
+                  <p className={s.cart_items_qty}>Cantidad: 1</p>
+                </div>
+                <div className={s.cart_items_actions}>
+                  <button
+                    className={s.cart_items_remove}
+                    onClick={() => {
+                      removeFromCart(product)
+                    }}
+                  >
+                    <i className={s.cart_items_remove_icon}></i>
+                  </button>
                   <p className={s.cart_items_price}>
                     {formatPrice(product.price)}
                   </p>
+                  <div className={s.cart_items_toggleqty}>
+                    <button>-</button>
+                    <button>+</button>
+                  </div>
                 </div>
-                <button
-                  className={s.cart_items_remove}
-                  onClick={() => {
-                    removeFromCart(product)
-                  }}
-                >
-                  <i className={s.cart_items_remove_icon}></i>
-                </button>
               </div>
             ))
           )}

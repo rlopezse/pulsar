@@ -8,14 +8,29 @@ function ProductCard({ data }: { data: Product }) {
   const { cart, setIsOpen, setCart } = useCartContext()
 
   const addToCart = () => {
-    if (cart.checkout >= 2000000) {
-      alert('Acaso crees que somos millonarios!?')
-      return
-    }
-    setCart({
-      products: [...cart.products, data],
-      checkout: cart.checkout + data.price,
+    // aca se cambia como se agrega el prod al carro
+    let isAlreadyRegister = cart.products.some(function (item) {
+      return item.id === data.id
     })
+
+    if (isAlreadyRegister) {
+      let updatedCart = cart.products.map(function (item) {
+        if (item.id === data.id) {
+          return { ...item, qty: item.qty++, price: item.price + data.price }
+        }
+        return item
+      })
+
+      setCart({
+        products: [...updatedCart],
+        checkout: cart.checkout + data.price,
+      })
+    } else {
+      setCart({
+        products: [...cart.products, data],
+        checkout: cart.checkout + data.price,
+      })
+    }
 
     setIsOpen(true)
   }

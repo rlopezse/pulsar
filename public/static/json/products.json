@@ -2,6 +2,7 @@
   "products": [
     {
       "id": 1,
+      "qty" : 1,
       "sku": "6802305694",
       "title": "iPhone 15 Pro Max",
       "description": "Top Apple flagship",
@@ -13,6 +14,7 @@
     },
     {
       "id": 2,
+      "qty" : 1,
       "sku": "6673339691",
       "title": "iPhone 15 Pro",
       "description": "Powerful compact phone",
@@ -24,6 +26,7 @@
     },
     {
       "id": 3,
+      "qty" : 1,
       "sku": "5399237704",
       "title": "iPhone 15",
       "description": "Balanced performance",
@@ -35,6 +38,7 @@
     },
     {
       "id": 4,
+      "qty" : 1,
       "sku": "0007382621",
       "title": "iPhone 14 Pro",
       "description": "Previous gen premium",
@@ -46,6 +50,7 @@
     },
     {
       "id": 5,
+      "qty" : 1,
       "sku": "4711209091",
       "title": "iPhone SE 3",
       "description": "Small and fast",
@@ -57,6 +62,7 @@
     },
     {
       "id": 6,
+      "qty" : 1,
       "sku": "4656901554",
       "title": "Galaxy S24 Ultra",
       "description": "Ultra performance",
@@ -68,6 +74,7 @@
     },
     {
       "id": 7,
+      "qty" : 1,
       "sku": "3885045739",
       "title": "Galaxy S24",
       "description": "Premium balance",
@@ -79,6 +86,7 @@
     },
     {
       "id": 8,
+      "qty" : 1,
       "sku": "6220507977",
       "title": "Galaxy Z Flip5",
       "description": "Modern foldable",
@@ -90,6 +98,7 @@
     },
     {
       "id": 9,
+      "qty" : 1,
       "sku": "0460108064",
       "title": "Xiaomi 14",
       "description": "Xiaomi flagship",
@@ -101,6 +110,7 @@
     },
     {
       "id": 10,
+      "qty" : 1,
       "sku": "5461522547",
       "title": "Redmi Note 13 Pro",
       "description": "Great value phone",
@@ -112,6 +122,7 @@
     },
     {
       "id": 11,
+      "qty" : 1,
       "sku": "8435538295",
       "title": "Xiaomi 13T",
       "description": "Strong camera",
@@ -123,6 +134,7 @@
     },
     {
       "id": 12,
+      "qty" : 1,
       "sku": "6251140018",
       "title": "Vivo X100 Pro",
       "description": "Advanced photography",
@@ -134,6 +146,7 @@
     },
     {
       "id": 13,
+      "qty" : 1,
       "sku": "7648615307",
       "title": "Vivo V30",
       "description": "Elegant design",
@@ -145,6 +158,7 @@
     },
     {
       "id": 14,
+      "qty" : 1,
       "sku": "5641464151",
       "title": "Vivo Y100",
       "description": "Solid midrange",
@@ -156,6 +170,7 @@
     },
     {
       "id": 15,
+      "qty" : 1,
       "sku": "1169609438",
       "title": "Huawei P60 Pro",
       "description": "Premium camera",

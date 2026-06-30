@@ -57,9 +57,15 @@ const Cart = () => {
           ) : (
             cart.products.map((product) => (
               <div key={product.id} className={s.cart_items}>
+                <div className={s.cart_items_img}>
+                  <img
+                    src={`/static/products/${product.sku}.webp`}
+                    alt={product.title}
+                  />
+                </div>
                 <div>
                   <p className={s.cart_items_title}>{product.title}</p>
-                  <p className={s.cart_items_qty}>Cantidad: 1</p>
+                  <p className={s.cart_items_qty}>Cantidad: {product.qty} </p>
                 </div>
                 <div className={s.cart_items_actions}>
                   <button
@@ -74,8 +80,12 @@ const Cart = () => {
                     {formatPrice(product.price)}
                   </p>
                   <div className={s.cart_items_toggleqty}>
-                    <button>-</button>
-                    <button>+</button>
+                    <button
+                      className={`${s.cart_items_toggleqty_minus} ${s.cart_items_toggleqty_minus_disabled}`}
+                    >
+                      -
+                    </button>
+                    <button className={s.cart_items_toggleqty_plus}>+</button>
                   </div>
                 </div>
               </div>

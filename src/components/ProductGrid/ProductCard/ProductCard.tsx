@@ -16,10 +16,16 @@ function ProductCard({ data }: { data: Product }) {
     if (isAlreadyRegister) {
       let updatedCart = cart.products.map(function (item) {
         if (item.id === data.id) {
-          return { ...item, qty: item.qty++, price: item.price + data.price }
+          return {
+            ...item,
+            qty: item.qty + data.qty,
+            price: item.price + data.price,
+          }
         }
         return item
       })
+
+      console.log(updatedCart)
 
       setCart({
         products: [...updatedCart],

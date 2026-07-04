@@ -29,6 +29,26 @@ const Cart = () => {
     })
   }
 
+  const singleAddToCart = (product: Product) => {
+    let updatedCart = cart.products.map(function (item) {
+      if (item.id === product.id) {
+        return {
+          ...item,
+          qty: item.qty + 1,
+          price: item.price + 1000000,
+        }
+      }
+      return item
+    })
+
+    //console.log(updatedCart)
+
+    setCart({
+      products: [...updatedCart],
+      checkout: cart.checkout + product.price,
+    })
+  }
+
   return (
     <div className={`${s.cart} ${isOpen ? s.cart_isOpen : ''}`}>
       <button className={s.cart_button} onClick={() => setIsOpen(!isOpen)}>
@@ -85,7 +105,9 @@ const Cart = () => {
                     >
                       -
                     </button>
-                    <button className={s.cart_items_toggleqty_plus}>+</button>
+                    <button className={s.cart_items_toggleqty_plus} onClick={() =>
+                      singleAddToCart(product)
+                    }>+</button>
                   </div>
                 </div>
               </div>

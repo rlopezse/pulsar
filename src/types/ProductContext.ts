@@ -3,6 +3,7 @@ export interface Product {
   qty: number
   title: string
   price: number
+  basePrice: number
   currencyId: 'CLP'
   currencyFormat: '$'
   category: string

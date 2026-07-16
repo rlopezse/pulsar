@@ -35,17 +35,33 @@ const Cart = () => {
         return {
           ...item,
           qty: item.qty + 1,
-          price: item.price + 1000000,
+          price: item.price + product.basePrice,
         }
       }
       return item
     })
 
-    //console.log(updatedCart)
+    setCart({
+      products: [...updatedCart],
+      checkout: cart.checkout + product.basePrice,
+    })
+  }
+
+  const singleRemoveFromCart = (product: Product) => {
+    let updatedCart = cart.products.map(function (item) {
+      if (item.id === product.id) {
+        return {
+          ...item,
+          qty: item.qty - 1,
+          price: item.price - product.basePrice,
+        }
+      }
+      return item
+    })
 
     setCart({
       products: [...updatedCart],
-      checkout: cart.checkout + product.price,
+      checkout: cart.checkout - product.basePrice,
     })
   }
 
@@ -101,13 +117,17 @@ const Cart = () => {
                   </p>
                   <div className={s.cart_items_toggleqty}>
                     <button
-                      className={`${s.cart_items_toggleqty_minus} ${s.cart_items_toggleqty_minus_disabled}`}
+                      onClick={() => singleRemoveFromCart(product)}
+                      className={`${s.cart_items_toggleqty_minus} ${product.qty === 1 ? s.cart_items_toggleqty_minus_disabled : ''}`}
                     >
                       -
                     </button>
-                    <button className={s.cart_items_toggleqty_plus} onClick={() =>
-                      singleAddToCart(product)
-                    }>+</button>
+                    <button
+                      className={s.cart_items_toggleqty_plus}
+                      onClick={() => singleAddToCart(product)}
+                    >
+                      +
+                    </button>
                   </div>
                 </div>
               </div>

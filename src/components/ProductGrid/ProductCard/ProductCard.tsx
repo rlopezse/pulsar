@@ -32,6 +32,7 @@ function ProductCard({ data }: { data: Product }) {
         checkout: cart.checkout + data.price,
       })
     } else {
+      data.basePrice = data.price
       setCart({
         products: [...cart.products, data],
         checkout: cart.checkout + data.price,

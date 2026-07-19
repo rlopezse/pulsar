@@ -13,7 +13,7 @@ jobs:
           node-version: 22
           cache: 'npm'
       - run: npm install 
-      - run: echo "${{ secrets.FRONTIER }}" > .env
+      - run: echo "${{ secrets.PULSAR_ENV }}" > .env
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:

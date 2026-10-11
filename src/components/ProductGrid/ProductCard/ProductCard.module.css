@@ -77,3 +77,13 @@
 .product_card_button:hover {
   background-color: var(--primary);
 }
+
+@media (max-width: 767px) {
+  .product_icon_cart {
+    display: none;
+  }
+
+  .product_card_button {
+    font-size: 11px;
+  }
+}

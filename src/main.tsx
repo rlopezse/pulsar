@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 import { CartContextProvider } from './context/Cart/CartContextProvider'
 import { ProductContextProvider } from './context/Product/ProductContextProvider'
 import { FilterContextProvider } from './context/Filter/FilterContextProvider'
@@ -12,7 +13,9 @@ createRoot(document.getElementById('root')!).render(
     <ProductContextProvider>
       <FilterContextProvider>
         <CartContextProvider>
-          <App />
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
         </CartContextProvider>
       </FilterContextProvider>
     </ProductContextProvider>
